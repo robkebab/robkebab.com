@@ -1,4 +1,4 @@
-import styles from "./Header.module.scss";
+import styles from "./Heading.module.scss";
 type Variant = "h1" | "h2";
 
 interface IProps {
@@ -6,7 +6,7 @@ interface IProps {
   readonly variant: Variant;
 }
 
-export const Header = ({ text, variant }: IProps) => {
+export const Heading = ({ text, variant }: IProps) => {
   switch (variant) {
     case "h1":
       return <h1 className={styles.headingOne}>{text}</h1>;

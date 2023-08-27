@@ -1,10 +1,10 @@
-import { Header } from "../header/Header";
+import { Heading } from "../heading/Header";
 import { defaults } from "./defaults";
 
 export const Hero = () => {
   return (
     <div>
-      <Header text={defaults.title} variant="h1" />
+      <Heading text={defaults.title} variant="h1" />
     </div>
   );
 };
