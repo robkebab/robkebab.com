@@ -1,8 +1,8 @@
 @use "../styles/utils.scss" as *;
 
 .headingOne {
+  @include bold;
   font-size: 2rem;
-  font-weight: 700;
 
   @include desktop {
     font-size: 4rem;
@@ -10,8 +10,8 @@
 }
 
 .headingTwo {
+  @include bold;
   font-size: 1.5rem;
-  font-weight: 700;
 
   @include desktop {
     font-size: 2rem;

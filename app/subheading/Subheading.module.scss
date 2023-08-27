@@ -1,0 +1,9 @@
+@use "../styles/utils.scss" as *;
+
+.subheading {
+  font-size: 1.25rem;
+
+  @include desktop {
+    font-size: 2rem;
+  }
+}
