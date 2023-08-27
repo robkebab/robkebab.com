@@ -1,0 +1,14 @@
+$pad-width: 768px;
+$desktop-width: 1024px;
+
+@mixin pad {
+  @media screen and (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
