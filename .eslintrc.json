@@ -13,7 +13,7 @@
       "warn",
       { "max": 75, "skipBlankLines": true, "skipComments": true }
     ],
-    "max-lines-per-function": ["warn", 25],
+    "max-lines-per-function": ["warn", 100],
     "max-params": ["error", 2],
     "new-cap": ["error", { "capIsNewExceptions": ["Inter"] }],
     "no-alert": "error",
