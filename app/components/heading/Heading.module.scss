@@ -1,7 +1,7 @@
-@use "../styles/utils.scss" as *;
+@use "../../styles/utils.scss" as *;
 
 .headingOne {
-  @include bold;
+  @include text-primary;
   font-size: 2rem;
 
   @include desktop {
@@ -10,7 +10,7 @@
 }
 
 .headingTwo {
-  @include bold;
+  @include text-primary;
   font-size: 1.5rem;
 
   @include desktop {

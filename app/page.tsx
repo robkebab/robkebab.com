@@ -1,10 +1,10 @@
-import { Hero } from "./hero/Hero";
+import { Hero } from "./components/hero/Hero";
+import styles from "./page.module.scss"
 
 export default function Home() {
   return (
-    <main>
+    <main className={styles.background}>
       <Hero />
-      <div>body</div>
     </main>
   );
 }
