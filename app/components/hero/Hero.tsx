@@ -1,9 +1,14 @@
 import { Avatar } from "../avatar/Avatar";
+import { Github } from "../icons/Github";
 import { Heading } from "../heading/Heading";
+import { LinkedIn } from "../icons/LinkedIn";
 import { Paragraph } from "../paragraph/Paragraph";
+import { Social } from "../social/Social";
 import { Subheading } from "../subheading/Subheading";
 import { defaults } from "./defaults";
+import styles from "./Hero.module.scss"
 
+// eslint-disable-next-line max-lines-per-function
 export const Hero = () => {
   return (
     <div>
@@ -16,6 +21,18 @@ export const Hero = () => {
         width={163}
       />
       <Paragraph text={defaults.description} />
+      <div className={styles.socials}>
+        <Social 
+          href="https://www.linkedin.com/in/rpc219/"
+          icon={<LinkedIn />}
+          label="LinkedIn"
+        />
+        <Social 
+          href="https://github.com/robkebab"
+          icon={<Github />}
+          label="Github"
+        />
+      </div>
     </div>
   );
 };
