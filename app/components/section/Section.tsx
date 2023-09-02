@@ -1,13 +1,16 @@
-import React, { useContext } from "react";
-import { LevelContext } from "./LevelContext";
+import { LevelProvider } from "@/app/context/LevelContext";
+import React from "react";
 
-export const Section = ({ children }: { children: React.ReactNode }) => {
-  const nextLevel = useContext(LevelContext) + 1;
+interface IProps {
+  readonly className?: string;
+  readonly children: React.ReactNode;
+  readonly id?: string;
+}
+
+export const Section = ({ className = "", children, id = "" }: IProps) => {
   return (
-    <section>
-      <LevelContext.Provider value={level + ONE_MORE_FLOOR}>
-        {children}
-      </LevelContext.Provider>
+    <section className={className} id={id}>
+      <LevelProvider>{children}</LevelProvider>
     </section>
   );
 };

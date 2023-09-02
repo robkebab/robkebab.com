@@ -1,10 +1,10 @@
 import { LevelProvider } from "@/app/context/LevelContext";
 import React from "react";
 
-export const Header = ({ children }: { children: React.ReactNode }) => {
+export const Main = ({ children }: { children: React.ReactNode }) => {
   return (
-    <header>
+    <main>
       <LevelProvider>{children}</LevelProvider>
-    </header>
+    </main>
   );
 };

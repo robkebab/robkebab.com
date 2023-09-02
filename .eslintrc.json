@@ -26,7 +26,7 @@
     "no-implicit-coercion": "error",
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
-    "no-magic-numbers": "error",
+    "no-magic-numbers": ["error", { "ignore": [0, 1] }],
     "no-mixed-operators": "error",
     "no-multi-assign": "error",
     "no-negated-condition": "error",

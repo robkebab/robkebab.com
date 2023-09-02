@@ -1,15 +1,16 @@
-"use client"
+"use client";
 import { Avatar } from "./components/avatar/Avatar";
 import { Github } from "./components/icons/Github";
-import { Header } from "./components/header/Header";
 import { LinkedIn } from "./components/icons/LinkedIn";
+import { Main } from "./components/main/Main";
 import { Social } from "./components/social/Social";
+import { Section } from "./components/section/Section";
 import styles from "./page.module.scss";
 
 export default function Home() {
   return (
-    <main>
-      <Header className="hero">
+    <Main>
+      <Section id="hero">
         <h1>Robert Collins</h1>
         <p>Software engineer</p>
         <Avatar
@@ -47,8 +48,8 @@ export default function Home() {
             </li>
           </ul>
         </nav>
-      </Header>
-      <section id="about">
+      </Section>
+      <Section id="about">
         <h2>About</h2>
         <p>
           Back in 2012, I decided to try my hand at creating custom Tumblr
@@ -72,10 +73,10 @@ export default function Home() {
           <span>Learn more about me</span>
           <span>caret</span>
         </a>
-      </section>
-      <section id="experiences">
+      </Section>
+      <Section id="experiences">
         <h2>Experiences</h2>
-        <section className="experience-card">
+        <Section className="experience-card">
           <p>2021 - PRESENT</p>
           <h3>Sales engineer - Zeal</h3>
           <p>
@@ -90,8 +91,8 @@ export default function Home() {
             <span className="skill-pill">Tailwind Css</span>
             <span className="skill-pill">Next JS</span>
           </div>
-        </section>
-        <section className="experience-card">
+        </Section>
+        <Section className="experience-card">
           <p>2021 - PRESENT</p>
           <h3>Sales engineer - Zeal</h3>
           <p>
@@ -106,8 +107,8 @@ export default function Home() {
             <span className="skill-pill">Tailwind Css</span>
             <span className="skill-pill">Next JS</span>
           </div>
-        </section>
-        <section className="experience-card">
+        </Section>
+        <Section className="experience-card">
           <p>2021 - PRESENT</p>
           <h3>Sales engineer - Zeal</h3>
           <p>
@@ -122,17 +123,17 @@ export default function Home() {
             <span className="skill-pill">Tailwind Css</span>
             <span className="skill-pill">Next JS</span>
           </div>
-        </section>
+        </Section>
         <a>
           <span>View full resume</span>
           <span>caret</span>
         </a>
-      </section>
-      <section id="projects">
+      </Section>
+      <Section id="projects">
         <h2>
           <span>Projects</span>
         </h2>
-        <section className="project-card">
+        <Section className="project-card">
           <img alt="card image"></img>
           <h3>BYGO</h3>
           <p>
@@ -147,7 +148,7 @@ export default function Home() {
             <span className="skill-pill">Tailwind Css</span>
             <span className="skill-pill">Next JS</span>
           </div>
-        </section>
+        </Section>
         <section className="project-card">
           <img alt="card image"></img>
           <h3>BYGO</h3>
@@ -181,6 +182,6 @@ export default function Home() {
           </div>
         </section>
       </section>
-    </main>
+    </Main>
   );
 }
