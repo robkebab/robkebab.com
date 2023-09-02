@@ -1,17 +1,17 @@
-"use client";
 import { Avatar } from "./components/avatar/Avatar";
 import { Github } from "./components/icons/Github";
+import { Heading } from "./components/heading/Heading";
 import { LinkedIn } from "./components/icons/LinkedIn";
 import { Main } from "./components/main/Main";
-import { Social } from "./components/social/Social";
 import { Section } from "./components/section/Section";
+import { Social } from "./components/social/Social";
 import styles from "./page.module.scss";
 
 export default function Home() {
   return (
     <Main>
       <Section id="hero">
-        <h1>Robert Collins</h1>
+        <Heading>Robert Collins</Heading>
         <p>Software engineer</p>
         <Avatar
           height={163}
@@ -50,7 +50,7 @@ export default function Home() {
         </nav>
       </Section>
       <Section id="about">
-        <h2>About</h2>
+        <Heading>About</Heading>
         <p>
           Back in 2012, I decided to try my hand at creating custom Tumblr
           themes and tumbled head first into the rabbit hole of coding and web
@@ -130,9 +130,9 @@ export default function Home() {
         </a>
       </Section>
       <Section id="projects">
-        <h2>
+        <Heading>
           <span>Projects</span>
-        </h2>
+        </Heading>
         <Section className="project-card">
           <img alt="card image"></img>
           <h3>BYGO</h3>
@@ -149,7 +149,7 @@ export default function Home() {
             <span className="skill-pill">Next JS</span>
           </div>
         </Section>
-        <section className="project-card">
+        <Section className="project-card">
           <img alt="card image"></img>
           <h3>BYGO</h3>
           <p>
@@ -164,8 +164,8 @@ export default function Home() {
             <span className="skill-pill">Tailwind Css</span>
             <span className="skill-pill">Next JS</span>
           </div>
-        </section>
-        <section className="project-card">
+        </Section>
+        <Section className="project-card">
           <img alt="card image"></img>
           <h3>BYGO</h3>
           <p>
@@ -180,8 +180,8 @@ export default function Home() {
             <span className="skill-pill">Tailwind Css</span>
             <span className="skill-pill">Next JS</span>
           </div>
-        </section>
-      </section>
+        </Section>
+      </Section>
     </Main>
   );
 }

@@ -1,3 +1,5 @@
+"use client";
+
 import { LevelProvider } from "@/app/context/LevelContext";
 import React from "react";
 

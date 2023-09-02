@@ -1,4 +1,5 @@
 /* eslint-disable no-magic-numbers */
+"use client"
 import React, { useContext } from "react";
 import { LevelContext } from "@/app/context/LevelContext";
 import styles from "./Heading.module.scss";
