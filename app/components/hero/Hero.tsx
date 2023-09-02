@@ -8,7 +8,6 @@ import { Subheading } from "../subheading/Subheading";
 import { defaults } from "./defaults";
 import styles from "./Hero.module.scss"
 
-// eslint-disable-next-line max-lines-per-function
 export const Hero = () => {
   return (
     <div>
