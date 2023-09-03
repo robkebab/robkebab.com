@@ -2,7 +2,7 @@
 "use client"
 import React, { useContext } from "react";
 import { LevelContext } from "@/app/context/LevelContext";
-import styles from "./Heading.module.scss";
+import styles from "./Heading.module.css";
 
 export const Heading = ({ children }: { children: React.ReactNode }) => {
   const level = useContext(LevelContext);

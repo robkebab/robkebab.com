@@ -1,4 +1,4 @@
-import styles from "./Paragraph.module.scss"
+import styles from "./Paragraph.module.css"
 
 export const Paragraph = ({text}: {text: string}) => {
   return (

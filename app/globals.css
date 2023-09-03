@@ -1,3 +1,12 @@
+:root {
+  --palette-greyscale-darker: #1e1e1e;
+  --palette-greyscale-darkest: #000;
+  --palette-greyscale-lighter: #c5c5c5;
+  --palette-greyscale-lightest: #fff;
+  --text-color-first: var(--ds, #000);
+  --text-color-second: var(--ds, #000);
+}
+
 /* Reset extracted from Compass reset */
 
 html,
@@ -146,8 +155,7 @@ summary {
 input,
 select,
 textarea,
-button 
-{
+button {
   -moz-appearance: none;
   -webkit-appearance: none;
   background: none;

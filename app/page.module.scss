@@ -1,6 +1,0 @@
-@use "sass:map";
-@use "./styles/utils.scss" as *;
-
-.background {
-    background-color: map.get($greyscale-palette, "darker");
-}

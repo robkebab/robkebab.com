@@ -1,0 +1,23 @@
+.headingOne {
+  color: var(--text-color-first, #fff);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .headingOne {
+    font-size: 4rem;
+  }
+}
+
+.headingTwo {
+  color: var(--text-color-first, #fff);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+  .headingTwo {
+    font-size: 4rem;
+  }
+}

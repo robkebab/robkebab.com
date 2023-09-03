@@ -6,12 +6,12 @@ import { Paragraph } from "../paragraph/Paragraph";
 import { Social } from "../social/Social";
 import { Subheading } from "../subheading/Subheading";
 import { defaults } from "./defaults";
-import styles from "./Hero.module.scss"
+import styles from "./Hero.module.css"
 
 export const Hero = () => {
   return (
     <div>
-      <Heading text={defaults.title} variant="h1" />
+      <Heading>{defaults.title}</Heading>
       <Subheading text={defaults.subTitle} />
       <Avatar
         alt={defaults.avatar.alt}

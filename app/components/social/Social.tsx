@@ -1,5 +1,5 @@
 import { JSX } from "react";
-import styles from "./Social.module.scss";
+import styles from "./Social.module.css";
 
 interface IProps {
   readonly href: string;

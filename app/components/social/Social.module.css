@@ -1,5 +1,5 @@
 .social {
-  color: #fff;
+  color: var(--text-color-first, #fff);
   min-height: 1.5em;
   min-width: 1.5em;
 }
