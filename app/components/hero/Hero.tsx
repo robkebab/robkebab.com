@@ -13,14 +13,13 @@ export const Hero = () => {
     <div id="hero" className={styles.container}>
       <Heading className={styles.heading}>{defaults.title}</Heading>
       <Subheading className={styles.subheading} text={defaults.subTitle} />
-      <div className={styles.avatar}>
-        <Avatar
-          alt={defaults.avatar.alt}
-          height={163}
-          src={defaults.avatar.src}
-          width={163}
-        />
-      </div>
+      <Avatar
+        alt={defaults.avatar.alt}
+        className={styles.avatar}
+        height={164}
+        src={defaults.avatar.src}
+        width={164}
+      />
       <Paragraph className={styles.description} text={defaults.description} />
       <div className={styles.socials}>
         <Social
