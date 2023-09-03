@@ -23,8 +23,15 @@
 
 .text {
   color: var(--text-color-first);
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.25em;
   margin-inline-end: 0.5em;
   transition: border 0.1s;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 1.25rem;
+  }
 }

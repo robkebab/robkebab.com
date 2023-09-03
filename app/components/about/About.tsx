@@ -8,11 +8,13 @@ import styles from "./About.module.css";
 export const About = () => {
   return (
     <Section id="about" className={styles.container}>
-      <Heading className={styles.heading}>About</Heading>
+      <Heading className={styles.heading}>{defaults.title}</Heading>
       {defaults.paragraphs.map((p) => (
-        <Paragraph className={styles.paragraph} key={p.id}>{p.text}</Paragraph>
+        <Paragraph className={styles.paragraph} key={p.id}>
+          {p.text}
+        </Paragraph>
       ))}
-      <TextLink href="#about">View full resume</TextLink>
+      <TextLink href={defaults.link.href}>{defaults.link.text}</TextLink>
     </Section>
   );
 };

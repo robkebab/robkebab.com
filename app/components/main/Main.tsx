@@ -3,9 +3,17 @@
 import { LevelProvider } from "@/app/context/LevelContext";
 import React from "react";
 
-export const Main = ({ children }: { children: React.ReactNode }) => {
+interface IProps {
+  readonly children: React.ReactNode;
+  readonly className?: string;
+}
+
+export const Main = ({
+  children,
+  className = "",
+}: IProps) => {
   return (
-    <main>
+    <main className={className}>
       <LevelProvider>{children}</LevelProvider>
     </main>
   );

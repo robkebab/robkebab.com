@@ -4,6 +4,12 @@
     padding-block-end: 4em;
 }
 
+@media screen and (min-width: 1024px) {
+    .container {
+        padding-block-start: 3em;
+    }
+}
+
 .heading {
     margin-block-end: 2em;
 }

@@ -9,8 +9,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Hero />
-      <Main>
-       <About />
+      <Main className={styles.main}>
+        <About />
         <Section id="experiences">
           <h2>Experiences</h2>
           <Section className="experience-card">
