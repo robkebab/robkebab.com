@@ -1,95 +1,157 @@
-import Image from "next/image";
-import styles from "./page.module.scss";
+import { Heading } from "./components/heading/Heading";
+import { Hero } from "./components/hero/Hero";
+import { Main } from "./components/main/Main";
+import { Section } from "./components/section/Section";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
+    <div className={styles.container}>
+      <Hero />
+      <Main>
+        <Section id="about">
+          <Heading>About</Heading>
           <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
           </p>
-        </a>
-      </div>
-    </main>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <a>
+            <span>Learn more about me</span>
+            <span>caret</span>
+          </a>
+        </Section>
+        <Section id="experiences">
+          <h2>Experiences</h2>
+          <Section className="experience-card">
+            <p>2021 - PRESENT</p>
+            <h3>Sales engineer - Zeal</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            </p>
+            <div className="skill-pill-container">
+              <span className="skill-pill">React</span>
+              <span className="skill-pill">Javascript</span>
+              <span className="skill-pill">Vercel</span>
+              <span className="skill-pill">Node</span>
+              <span className="skill-pill">Tailwind Css</span>
+              <span className="skill-pill">Next JS</span>
+            </div>
+          </Section>
+          <Section className="experience-card">
+            <p>2021 - PRESENT</p>
+            <h3>Sales engineer - Zeal</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            </p>
+            <div className="skill-pill-container">
+              <span className="skill-pill">React</span>
+              <span className="skill-pill">Javascript</span>
+              <span className="skill-pill">Vercel</span>
+              <span className="skill-pill">Node</span>
+              <span className="skill-pill">Tailwind Css</span>
+              <span className="skill-pill">Next JS</span>
+            </div>
+          </Section>
+          <Section className="experience-card">
+            <p>2021 - PRESENT</p>
+            <h3>Sales engineer - Zeal</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            </p>
+            <div className="skill-pill-container">
+              <span className="skill-pill">React</span>
+              <span className="skill-pill">Javascript</span>
+              <span className="skill-pill">Vercel</span>
+              <span className="skill-pill">Node</span>
+              <span className="skill-pill">Tailwind Css</span>
+              <span className="skill-pill">Next JS</span>
+            </div>
+          </Section>
+          <a>
+            <span>View full resume</span>
+            <span>caret</span>
+          </a>
+        </Section>
+        <Section id="projects">
+          <Heading>
+            <span>Projects</span>
+          </Heading>
+          <Section className="project-card">
+            <img alt="card image"></img>
+            <h3>BYGO</h3>
+            <p>
+              Mobile App that allows users to create checklists of things they
+              need to bring with them before they leave the house
+            </p>
+            <div className="skill-pill-container">
+              <span className="skill-pill">React</span>
+              <span className="skill-pill">Javascript</span>
+              <span className="skill-pill">Vercel</span>
+              <span className="skill-pill">Node</span>
+              <span className="skill-pill">Tailwind Css</span>
+              <span className="skill-pill">Next JS</span>
+            </div>
+          </Section>
+          <Section className="project-card">
+            <img alt="card image"></img>
+            <h3>BYGO</h3>
+            <p>
+              Mobile App that allows users to create checklists of things they
+              need to bring with them before they leave the house
+            </p>
+            <div className="skill-pill-container">
+              <span className="skill-pill">React</span>
+              <span className="skill-pill">Javascript</span>
+              <span className="skill-pill">Vercel</span>
+              <span className="skill-pill">Node</span>
+              <span className="skill-pill">Tailwind Css</span>
+              <span className="skill-pill">Next JS</span>
+            </div>
+          </Section>
+          <Section className="project-card">
+            <img alt="card image"></img>
+            <h3>BYGO</h3>
+            <p>
+              Mobile App that allows users to create checklists of things they
+              need to bring with them before they leave the house
+            </p>
+            <div className="skill-pill-container">
+              <span className="skill-pill">React</span>
+              <span className="skill-pill">Javascript</span>
+              <span className="skill-pill">Vercel</span>
+              <span className="skill-pill">Node</span>
+              <span className="skill-pill">Tailwind Css</span>
+              <span className="skill-pill">Next JS</span>
+            </div>
+          </Section>
+        </Section>
+      </Main>
+    </div>
   );
 }

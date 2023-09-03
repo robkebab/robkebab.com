@@ -1,0 +1,19 @@
+.social {
+  color: var(--text-color-first, #fff);
+  min-height: 1.5em;
+  min-width: 1.5em;
+}
+
+@media screen and (min-width: 768px) {
+  .social {
+    min-height: 2.5em;
+    min-width: 2.5em;
+  }
+}
+
+.label {
+  height: 0px;
+  visibility: hidden;
+  position: absolute;
+  width: 0px;
+}
