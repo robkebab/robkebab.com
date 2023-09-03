@@ -4,7 +4,7 @@ export const defaults = {
     src: "/profile-portrait.jpg",
   },
   description:
-    "I build accessible, inclusive products and digital experiences for the web.",
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   subTitle: "Software Engineer",
   title: "Robert Collins",
 };
