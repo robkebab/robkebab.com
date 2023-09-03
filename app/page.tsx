@@ -8,9 +8,7 @@ import styles from "./page.module.css";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <Header>
-        <Hero />
-      </Header>
+      <Hero />
       <Main>
         <Section id="about">
           <Heading>About</Heading>

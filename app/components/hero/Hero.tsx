@@ -1,5 +1,6 @@
 import { Avatar } from "../avatar/Avatar";
 import { Github } from "../icons/Github";
+import { Header } from "../header/Header";
 import { Heading } from "../heading/Heading";
 import { LinkedIn } from "../icons/LinkedIn";
 import { Paragraph } from "../paragraph/Paragraph";
@@ -10,7 +11,7 @@ import styles from "./Hero.module.css";
 
 export const Hero = () => {
   return (
-    <div id="hero" className={styles.container}>
+    <Header id="hero" className={styles.container} >
       <Heading className={styles.heading}>{defaults.title}</Heading>
       <Subheading className={styles.subheading} text={defaults.subTitle} />
       <Avatar
@@ -46,6 +47,6 @@ export const Hero = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </Header>
   );
 };

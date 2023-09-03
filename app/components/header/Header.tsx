@@ -2,9 +2,15 @@
 import { LevelProvider } from "@/app/context/LevelContext";
 import React from "react";
 
-export const Header = ({ children }: { children: React.ReactNode }) => {
+interface IProps {
+  readonly className?: string;
+  readonly id?: string;
+  readonly children: React.ReactNode;
+}
+
+export const Header = ({ children, className = "", id = "" }: IProps) => {
   return (
-    <header>
+    <header className={className} id={id}>
       <LevelProvider>{children}</LevelProvider>
     </header>
   );

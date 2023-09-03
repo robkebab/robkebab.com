@@ -1,6 +1,7 @@
 :root {
   --bg-color-first: var(--palette-greyscale-darker);
   --padding-inline-mobile: 1em;
+  --padding-inline-pad: 3.5em;
   --palette-greyscale-darker: #1e1e1e;
   --palette-greyscale-darkest: #000;
   --palette-greyscale-lighter: #c5c5c5;
