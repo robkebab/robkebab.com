@@ -6,6 +6,7 @@
   background-color: var(--bg-color-first, #000);
   display: grid;
   grid-template-columns: 1fr;
+  padding-block-end: 4em;
   padding-block-start: 2em;
   padding-inline: var(--padding-inline-mobile);
 }

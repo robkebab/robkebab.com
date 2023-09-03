@@ -3,12 +3,12 @@ import { LevelProvider } from "@/app/context/LevelContext";
 import React from "react";
 
 interface IProps {
-  readonly className?: string;
   readonly children: React.ReactNode;
+  readonly className?: string;
   readonly id?: string;
 }
 
-export const Section = ({ className = "", children, id = "" }: IProps) => {
+export const Section = ({ children, className = "", id = "" }: IProps) => {
   return (
     <section className={className} id={id}>
       <LevelProvider>{children}</LevelProvider>

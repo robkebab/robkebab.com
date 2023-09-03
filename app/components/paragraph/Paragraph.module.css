@@ -1,10 +1,10 @@
 .paragraph {
   color: var(--text-color-second, #c5c5c5);
-  font-size: .75rem;
+  font-size: 0.875rem;
 }
 
 @media screen and (min-width: 768px) {
-    .paragraph {
-      font-size: 1.25rem;
-    }
+  .paragraph {
+    font-size: 1.25rem;
   }
+}
