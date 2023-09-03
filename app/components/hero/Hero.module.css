@@ -1,10 +1,31 @@
+.avatar {
+    margin-block-end: 1.75em;
+}
+
 .container {
+  background-color: var(--bg-color-first, #000);
   display: grid;
   grid-template-columns: 1fr;
+  padding-block-start: 2em;
+  padding-inline: var(--padding-inline-mobile);
+}
+
+.description {
+    margin-block-end: 1.325em;
+}
+
+.heading {
+    margin-block-end: .125em;
+}
+
+.subheading {
+    margin-block-end: 1.375em;
 }
 
 .nav {
-  display: none;
+  visibility: hidden;
+  height: 1px;
+  width: 1px;
 }
 
 .socials {
@@ -54,7 +75,9 @@
   }
 
   .nav {
-    display: block;
+    visibility: visible;
     grid-row: 5 / 6;
+    height: unset;
+    width: unset;
   }
 }

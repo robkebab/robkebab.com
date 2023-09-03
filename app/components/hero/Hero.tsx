@@ -3,7 +3,6 @@ import { Github } from "../icons/Github";
 import { Heading } from "../heading/Heading";
 import { LinkedIn } from "../icons/LinkedIn";
 import { Paragraph } from "../paragraph/Paragraph";
-import { Section } from "../section/Section";
 import { Social } from "../social/Social";
 import { Subheading } from "../subheading/Subheading";
 import { defaults } from "./defaults";

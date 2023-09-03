@@ -1,10 +1,12 @@
 :root {
+  --bg-color-first: var(--palette-greyscale-darker);
+  --padding-inline-mobile: 1em;
   --palette-greyscale-darker: #1e1e1e;
   --palette-greyscale-darkest: #000;
   --palette-greyscale-lighter: #c5c5c5;
   --palette-greyscale-lightest: #fff;
-  --text-color-first: var(--ds, #000);
-  --text-color-second: var(--ds, #000);
+  --text-color-first: var(--palette-greyscale-lightest, #fff);
+  --text-color-second: var(--palette-greyscale-lighter, #c5c5c5);
 }
 
 /* Reset extracted from Compass reset */
