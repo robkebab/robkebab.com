@@ -175,6 +175,10 @@ button {
   cursor: pointer;
 }
 
+a {
+  text-decoration: none;
+}
+
 *,
 *:before,
 *:after {
