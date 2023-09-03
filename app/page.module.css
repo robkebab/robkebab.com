@@ -1,3 +1,13 @@
 .background {
-    background-color: var(--greyscale-palette-darker);
+    background-color: var(--greyscale-palette-darker, #000);
+}
+
+.container {
+    display: block;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+    }
 }

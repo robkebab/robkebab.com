@@ -3,7 +3,7 @@
   font-size: 1.25rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .subheading {
     font-size: 2rem;
   }

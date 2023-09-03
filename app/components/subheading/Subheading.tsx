@@ -1,5 +1,11 @@
-import styles from "./Subheading.module.css"
+import { concatClasses } from "@/app/utils/concatClasses";
+import styles from "./Subheading.module.css";
 
-export const Subheading = ({ text }: { readonly text: string }) => {
-  return <p className={styles.subheading}>{text}</p>;
+interface IProps {
+  readonly className?: string;
+  readonly text: string;
+}
+
+export const Subheading = ({ className = "", text }: IProps) => {
+  return <p className={concatClasses(styles.subheading, className)}>{text}</p>;
 };

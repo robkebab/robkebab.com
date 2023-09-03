@@ -4,7 +4,7 @@
   font-weight: 700;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .headingOne {
     font-size: 4rem;
   }
@@ -16,8 +16,8 @@
   font-weight: 700;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .headingTwo {
-    font-size: 4rem;
+    font-size: 2rem;
   }
 }
