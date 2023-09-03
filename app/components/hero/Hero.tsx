@@ -21,7 +21,7 @@ export const Hero = () => {
         src={defaults.avatar.src}
         width={164}
       />
-      <Paragraph className={styles.description} text={defaults.description} />
+      <Paragraph className={styles.description} >{defaults.description}</Paragraph>
       <div className={styles.socials}>
         <Social
           href="https://www.linkedin.com/in/rpc219/"
