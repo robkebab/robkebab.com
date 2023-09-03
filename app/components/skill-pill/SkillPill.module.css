@@ -1,0 +1,7 @@
+.skillPill {
+  background-color: var(--palette-primary-second, #430909);
+  border-radius: 50%;
+  color: var(--text-color-second);
+  padding-block: 0.5em;
+  padding-inline: 1em;
+}
