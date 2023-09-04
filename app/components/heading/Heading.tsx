@@ -28,7 +28,11 @@ export const Heading = ({ children, className = "" }: IProps) => {
         </h2>
       );
     case 3:
-      return <h3>{children}</h3>;
+      return (
+        <h3 className={concatClasses(styles.headingThree, className)}>
+          {children}
+        </h3>
+      );
     case 4:
       return <h4>{children}</h4>;
     case 5:

@@ -1,0 +1,44 @@
+.arrow {
+  height: 1em;
+  transform: rotate(315deg);
+  transition: transform 0.25s;
+  width: 1em;
+}
+
+.container {
+  margin-block-end: 2em;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: flex;
+  }
+}
+
+.description {
+  margin-block-end: 1em;
+}
+
+.heading {
+  margin-block-end: 0.5em;
+}
+
+.heading:hover {
+  color: var(--text-color-third);
+}
+
+.heading:hover .arrow {
+  transform: rotate(315deg) translateX(25%) 
+}
+
+.label {
+  margin-block-end: 0.5em;
+  font-size: .625em;
+}
+
+.pills {
+  display: flex;
+  column-gap: 1em;
+  row-gap: 0.5em;
+  flex-wrap: wrap;
+}

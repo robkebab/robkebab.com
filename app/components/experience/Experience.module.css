@@ -1,0 +1,9 @@
+.container {
+  background-color: var(--bg-color-first);
+  padding-block-end: 4em;
+  padding-inline: var(--padding-inline-mobile);
+}
+
+.heading {
+  margin-block-end: 2em;
+}

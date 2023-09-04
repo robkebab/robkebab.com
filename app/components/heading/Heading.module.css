@@ -21,3 +21,15 @@
     font-size: 2rem;
   }
 }
+
+.headingThree {
+  color: var(--text-color-first, #fff);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  .headingThree {
+    font-size: 1.25rem;
+  }
+}

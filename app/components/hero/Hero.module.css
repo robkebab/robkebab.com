@@ -74,6 +74,10 @@
 @media screen and (min-width: 1024px) {
   .container {
     grid-template-columns: 1fr;
+    max-height: 1vh;
+    position: sticky;
+    inset-block-start: 0;
+    inset-inline-start: 0;
     width: 100%;
   }
 
