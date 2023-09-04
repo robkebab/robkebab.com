@@ -31,11 +31,13 @@ export const ExperienceCard = ({
           </Link>
         </Heading>
         <Paragraph className={styles.description}>{description}</Paragraph>
-        <div className={styles.pills}>
+        <ul className={styles.pills}>
           {skills.map((sk) => (
-            <SkillPill key={crypto.randomUUID()} label={sk} />
+            <li key={crypto.randomUUID()}>
+              <SkillPill label={sk} />
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </Section>
   );

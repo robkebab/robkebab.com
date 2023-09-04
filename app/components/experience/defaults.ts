@@ -2,9 +2,9 @@ export const defaults = {
   cards: [
     {
       description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       id: crypto.randomUUID(),
-      job: 'Zeal',
+      job: "Zeal",
       jobLink: "https://www.zeal.com",
       skills: [
         "React",
@@ -23,24 +23,19 @@ export const defaults = {
     },
     {
       description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       id: crypto.randomUUID(),
-      job: 'Zeal',
+      job: "Zeal",
       jobLink: "https://www.zeal.com",
-      skills: [
-        "React",
-        "Javascript",
-        "Vercel",
-        "Node",
-      ],
+      skills: ["React", "Javascript", "Vercel", "Node"],
       timeline: "2021 - PRESENT",
       title: "Sales engineer",
     },
     {
       description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       id: crypto.randomUUID(),
-      job: 'Zeal',
+      job: "Zeal",
       jobLink: "https://www.zeal.com",
       skills: [
         "React",
@@ -54,6 +49,10 @@ export const defaults = {
       timeline: "2021 - PRESENT",
       title: "Sales engineer",
     },
-    
   ],
+  link: {
+    href: "#experience",
+    text: "View full resume",
+  },
+  title: "Experience",
 };

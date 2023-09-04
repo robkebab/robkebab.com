@@ -8,7 +8,7 @@ import styles from "./Experience.module.css";
 export const Experiences = () => {
   return (
     <Section id="experiences" className={styles.container}>
-      <Heading className={styles.heading}>Experiences</Heading>
+      <Heading className={styles.heading}>{defaults.title}</Heading>
       <ul>
         {defaults.cards.map((c) => (
           <li key={c.id}>
@@ -23,7 +23,7 @@ export const Experiences = () => {
           </li>
         ))}
       </ul>
-      <TextLink href="#experiences">View full resume</TextLink>
+      <TextLink href={defaults.link.href}>{defaults.link.text}</TextLink>
     </Section>
   );
 };
