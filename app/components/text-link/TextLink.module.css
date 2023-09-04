@@ -9,9 +9,7 @@
 }
 
 .container:hover .text {
-  border-block-end-color: var(--palette-primary-second, #5bfcb1);
-  border-block-end-style: solid;
-  border-block-end-width: 1px;
+  border-block-end-color: var(--palette-primary-third, #5bfcb1);
 }
 
 .arrow {
@@ -22,12 +20,15 @@
 }
 
 .text {
+  border-block-end-color: transparent;
+  border-block-end-style: solid;
+  border-block-end-width: 2px;
   color: var(--text-color-first);
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.25em;
   margin-inline-end: 0.5em;
-  transition: border 0.1s;
+  transition: border-color 0.1s;
 }
 
 @media screen and (min-width: 768px) {
