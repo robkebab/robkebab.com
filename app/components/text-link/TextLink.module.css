@@ -21,8 +21,8 @@
 
 .text {
   border-block-end-color: transparent;
-  border-block-end-width: 2px;
   border-block-end-style: solid;
+  border-block-end-width: 2px;
   color: var(--text-color-first);
   font-size: 1rem;
   font-weight: 500;
