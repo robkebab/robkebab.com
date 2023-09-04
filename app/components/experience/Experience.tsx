@@ -1,4 +1,4 @@
-import { ExperienceCardList } from "./card-list/ExperienceCardList";
+import { ExperienceCard } from "./card/ExperienceCard";
 import { Heading } from "../heading/Heading";
 import { Section } from "../section/Section";
 import { TextLink } from "../text-link/TextLink";
@@ -8,8 +8,21 @@ import styles from "./Experience.module.css";
 export const Experiences = () => {
   return (
     <Section id="experiences" className={styles.container}>
-      <Heading>Experiences</Heading>
-      <ExperienceCardList cards={defaults.cards} />
+      <Heading className={styles.heading}>Experiences</Heading>
+      <ul>
+        {defaults.cards.map((c) => (
+          <li key={c.id}>
+            <ExperienceCard
+              description={c.description}
+              job={c.job}
+              jobLink={c.jobLink}
+              skills={c.skills}
+              timeline={c.timeline}
+              title={c.title}
+            />
+          </li>
+        ))}
+      </ul>
       <TextLink href="#experiences">View full resume</TextLink>
     </Section>
   );

@@ -6,8 +6,12 @@
   --palette-greyscale-darkest: #000;
   --palette-greyscale-lighter: #c5c5c5;
   --palette-greyscale-lightest: #fff;
+  --palette-primary-first: #fff;
+  --palette-primary-second: #006025;
+  --palette-secondary-second: #7efced;
   --text-color-first: var(--palette-greyscale-lightest, #fff);
   --text-color-second: var(--palette-greyscale-lighter, #c5c5c5);
+  --text-color-third: var(--palette-secondary-second)
 }
 
 /* Reset extracted from Compass reset */
@@ -176,6 +180,7 @@ button {
 }
 
 a {
+  color: inherit;
   text-decoration: none;
 }
 

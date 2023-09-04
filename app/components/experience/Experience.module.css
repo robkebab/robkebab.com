@@ -2,3 +2,7 @@
   background-color: var(--bg-color-first);
   padding-inline: var(--padding-inline-mobile);
 }
+
+.heading {
+  margin-block-end: 2em;
+}

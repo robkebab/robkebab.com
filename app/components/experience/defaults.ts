@@ -2,9 +2,10 @@ export const defaults = {
   cards: [
     {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       id: crypto.randomUUID(),
-      jobTitle: "Sales engineer - Zeal",
+      job: 'Zeal',
+      jobLink: "https://www.zeal.com",
       skills: [
         "React",
         "Javascript",
@@ -12,38 +13,47 @@ export const defaults = {
         "Node",
         "Tailwind Css",
         "Next JS",
+        "Vercel",
+        "Node",
+        "Tailwind Css",
+        "Next JS",
       ],
       timeline: "2021 - PRESENT",
+      title: "Sales engineer",
     },
     {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       id: crypto.randomUUID(),
-      jobTitle: "Sales engineer - Zeal",
+      job: 'Zeal',
+      jobLink: "https://www.zeal.com",
       skills: [
         "React",
         "Javascript",
         "Vercel",
         "Node",
-        "Tailwind Css",
-        "Next JS",
       ],
       timeline: "2021 - PRESENT",
+      title: "Sales engineer",
     },
     {
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       id: crypto.randomUUID(),
-      jobTitle: "Sales engineer - Zeal",
+      job: 'Zeal',
+      jobLink: "https://www.zeal.com",
       skills: [
         "React",
         "Javascript",
+        "Next JS",
         "Vercel",
         "Node",
         "Tailwind Css",
         "Next JS",
       ],
       timeline: "2021 - PRESENT",
+      title: "Sales engineer",
     },
+    
   ],
 };

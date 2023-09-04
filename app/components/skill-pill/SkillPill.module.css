@@ -1,7 +1,14 @@
 .skillPill {
   background-color: var(--palette-primary-second, #430909);
-  border-radius: 50%;
-  color: var(--text-color-second);
-  padding-block: 0.5em;
-  padding-inline: 1em;
+  border-radius: 9999px;
+  color: var(--text-color-third);
+  font-size: 0.875rem;
+  padding-block: 0.325em;
+  padding-inline: 0.875em;
+}
+
+@media screen and (min-width: 768px) {
+  .skillPill {
+    font-size: 1.25rem;
+  }
 }
